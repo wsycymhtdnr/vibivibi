@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="tab_top_selected_color">@android:color/holo_red_dark</color>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="color_999">#99999999</color>
+    <color name="color_white">#ffffffff</color>
+    <color name="color_565">#565A5A</color>
+    <color name="color_333">#333333</color>
+    <color name="color_dd2">#DD2F24</color>
+    <color name="color_eee">#eeeeee</color>
+    <color name="color_298">#2983E5</color>
+    <color name="color_9b9">#9B9C9D</color>
+</resources>

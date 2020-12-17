@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="theme_color_primary">#fffb7299</color>
+    <color name="white">#ffffffff</color>
+    <color name="gray_light">#ffcccccc</color>
+    <color name="tab_unselected_color">#AAffffff</color>
+    <!--TabBottom-->
+    <color name="tabBottomDefaultColor">#ff757575</color>
+    <color name="tabBottomTintColor">#fffb7299</color>
+    <color name="bg_main">#fff1f1f1</color>
+</resources>

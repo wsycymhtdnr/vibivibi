@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">歪比歪比</string>
+    <string name="if_home">&#xe661;</string>
+    <string name="if_channel">&#xe664;</string>
+    <string name="if_dynamic">&#xe666;</string>
+    <string name="if_shopping">&#xe737;</string>
+    <string name="if_personal">&#xe667;</string>
+    <string name="if_game_center"></string>
+    <string name="if_message"></string>
+</resources>

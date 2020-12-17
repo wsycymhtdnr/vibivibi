@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="data"
+            type="com.lyf.vibivibi.fragment.RecommendModel" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="0dp"
+        app:cardPreventCornerOverlap="false">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="102dp">
+
+                <ImageView
+                    android:src="@drawable/bili_default_image_tv"
+                    android:id="@+id/cover_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:url="@{data.cover}"
+                    android:scaleType="fitXY" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/ucrop_shadow_upside" />
+
+                <TextView
+                    android:id="@+id/play_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="@dimen/margin_tiny"
+                    android:drawableLeft="@mipmap/bangumi_common_ic_video_views"
+                    android:drawablePadding="3dip"
+                    android:text="@{data.play}"
+                    android:textColor="@color/white"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/reply_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="@dimen/margin_tiny"
+                    android:layout_toRightOf="@id/play_tv"
+                    android:drawableLeft="@mipmap/bangumi_common_ic_video_danmakus"
+                    android:drawablePadding="3dp"
+                    android:text="@{data.reply}"
+                    android:textColor="@color/white"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:text="@{data.duration}"
+                    android:id="@+id/duration_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginRight="@dimen/margin_tiny"
+                    android:textColor="@color/white"
+                    android:textSize="11sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:text="@{data.title}"
+                android:id="@+id/title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_medium"
+                android:layout_marginTop="@dimen/margin_tiny"
+                android:lines="2"
+                android:textColor="#ff000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:text="@{data.name}"
+                android:id="@+id/t_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:paddingBottom="12dp"
+                android:paddingTop="12dp"
+                android:textColor="#ff999999"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:paddingBottom="9dp"
+            android:paddingRight="12dp"
+            android:paddingTop="55dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:src="@mipmap/ic_more_grey" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/login_cover_fl"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:paddingBottom="18dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:paddingTop="18dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/login_cover_iv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </FrameLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>
